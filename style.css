@@ -1,1 +1,124 @@
+/* font and color palette */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+  --primary-color: #283593;
+  --secondary-color: #fff;
+  --heading-color: #283593;
+  --body-color: #666;
+  --link-color: #1a237e;
+  --link-hover-color: #283593;
+  --border-color: #e0e0e0;
+}
 
+/* general styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--body-color);
+  background-color: var(--secondary-color);
+}
+
+h1, h2, h3 {
+  color: var(--heading-color);
+}
+
+hr {
+  border-color: var(--border-color);
+  margin: 2rem 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* header styles */
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* main content styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* certifications section styles */
+.certifications {
+  margin-top: 2rem;
+}
+
+.certifications a {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* skills section styles */
+.skills {
+  margin-top: 2rem;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+/* organizations section styles */
+.organizations {
+  margin-top: 2rem;
+}
+
+/* projects section styles */
+.projects {
+  margin-top: 2rem;
+}
+
+.projects ul {
+  list-style: none;
+}
+
+.projects li {
+  margin-bottom: 1rem;
+}
+
+.projects a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
